@@ -13,40 +13,92 @@
 <body>
     <section id="header" class="header">
         <div class="nav-bar">
-            <div class="logo">
-                <a href="iindex.html">Proativa</a>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#" id="active">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Promoção</a></li>
-                    <li><a href="#">Homem</a></li>
-                    <li><a href="#">Mulher</a></li>
-                    <li><a href="#">Crianças</a></li>
-                </ul>
-            </div>
-            <div class="icons">
-                <ul>
-                    <li><a href="#"><i class="fa fa-sign-in"></i>Cadastra-se</a></li>
-                    <li><a href="#"><i class="fa fa-search"></i></a></li>
-                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                    
-                </ul>
-            </div>
+          <div class="logo">
+            <a href="index.html">Proativa</a>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">Carteiras</a></li>
+              <li><a href="#">produtos</a></li>
+              <li><a href="#">Malas </a></li>
+              <li><a href="#">Homem</a></li>
+              <li><a href="#">Mulher</a></li>
+            </ul>
+          </div>
+          <div class="icons">
+            <ul>
+              <li><a href="#"><i class="fa fa-sign-in"></i>Conecta-se</a></li>
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+              <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
         </div>
         <div class="hero">
-            <div class="row">
-                <div class="left-sec">
-                    <div class="content">
-                        <h2>Onlne</h2>
-                        <h1>Mochila</h1>
-                        <h3>Loja</h3>
-                        <a href="#" class="btn">Compre aqui</a>
-                    </div>
+          <div class="row">
+            <div class="left-sec">
+              <div class="content">
+                <h2>Online</h2>
+                <h1>Mochilas</h1>
+                <h3>Loja</h3>
+                <a href="#" class="btn">Compre agora</a> 
+              </div>
+              <div class="product">
+                <div class="product-first">
+                  <div class="product-img">
+                    <img src="img/1.jpg">
+                  </div>
+                  <div class="product-description">
+                    <h2 class="company-title">Probag</h2>
+                    <h3 class="company-line">Mochila Preta</h3>
+                    <span class="price">150.000 kz</span>
+                  </div>
                 </div>
+                <div class="product-second">
+                  <div class="product-img">
+                    <img src="img/2.jpg">
+                  </div>
+                  <div class="product-description">
+                    <h2 class="company-title">Probag</h2>
+                    <h3 class="company-line">Mochilas Asul</h3>
+                    <span class="price">180.000 KZ</span>
+                  </div>
+                </div>
+                <div></div>
+              </div>
             </div>
+            <div class="right-sec">
+              <div class="bags-brand">
+                <div><img src="img/1.png"></div>
+                <div><img src="img/2.png"></div>
+                <div><img src="img/3.png"></div>
+                <div><img src="img/4.png"></div>
+              </div>
+            </div>
+          </div>
+          <div class="social-media">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
         </div>
-    </section>
+      </section>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".bags-brand").slick({
+          autoplay: true,
+            speed:500,
+          dots: true,
+          fade: true,
+          cssEase: 'linear'
+        });
+      });
+    </script>
 </body>
 </html>
